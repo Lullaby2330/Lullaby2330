@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portofolio pertama saya</title>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Freckle+Face&family=Lato:wght@700&family=Nosifer&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alumni+Sans+Collegiate+One&family=Bintik+Wajah&keluarga=Lato:wght@700&family=Nosifer&display=swap"rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&keluarga=Alumni+Sans+PerguruanTinggi+Satu&keluarga=Bintik+Wajah & keluarga=Heebo:wght@100;200&keluarga=IBM+Plex+Sans:wght@100&keluarga=Lato:wght@700&keluarga=Nosifer&display=swap"rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alumni+Sans+Collegiate+One&family=Barlow+Condensed:wght@500&family=Freckle+Face&family=Heebo:wght@100;200&family=IBM+Plex+Sans:wght@100&family=Lato:wght@700&family=Nosifer&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alumni+Sans+Collegiate+One&family=Barlow+Condensed:wght@100&family=Freckle+Face&family=Heebo:wght@100;200&family=IBM+Plex+Sans:wght@100&family=Indie+Flower&family=Lato:wght@700&family=Nosifer&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            top: 0;
+        }
+       
+        .indukCon {
+            color: White;
+            background-color: black;
+            display: flex;
+            position: fixed;
+            width: 100%;
+            height: 60px;
+        }
+       
+        #judulWeb {
+            margin: 15px 5px 5px 8px;
+        }
+        #img-responsive {
+            border-radius: 100%;
+            border: 2px solid white;
+            filter: contrast(150%);
+           position: absolute;
+            margin: 8px;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            animation-name: bulat;
+            animation-duration: 0.5s;
+        }
+         @keyframes bulat {
+    from {
+      transform: rotate(5turn);
+    }
+    to {
+      transform: rotate(-4turn);
+    }
+  }
+  
+  .bulat {
+    animation: bulat 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+            
+        
+        #menuHamburger {
+            position: fixed;
+            right: 3px;
+            margin: 8px;
+            display: flex;
+          /*  z-index: 2;*/
+        }
+        
+        #namaid {
+          position: fixed;
+            right: 2px;
+            margin: 20px 24px 10px ;
+            display: flex;
+            opacity: 0;
+        } 
+            #namaid:checked + 
+        #anakClassDua {
+transform: scale(1);
+position: relative;
+z-index: 1;
+width: 100%;
+}
+
+        #warna {
+            filter: invert(50%);
+            width: 45px;
+            height: 45px;
+        }
+
+        #anakClassDua { 
+            list-style: none;
+            transform: scale(0);
+            background-color: #252525;
+            margin-top: 60px;
+            padding: 5px;
+            transition: 2s;
+           position: fixed;
+           width: 100%;/* kurang pake width*/
+           z-index: 1;
+        }
+        #anakClassDua >ul>li {
+            justify-content: center;
+            display: grid;
+           padding: 20px 0 20px 0;
+            margin-block: 5px;
+            border-bottom:0.1px solid #A9A9A9;
+            list-style: none;
+            z-index: 2;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: Times New Roman;
+            font-size: 20px;
+        }
+        #icon { 
+          justify-content: center;
+            align-content: center;
+            display: flex; 
+            margin-block: 5px;
+            margin: -05px;
+        }
+        #facebook { 
+          padding: 10px; 
+        }
+        #instagram {
+          padding: 10px;
+        }
+        #whatsapp { 
+          padding: 10px; 
+        }
+        #twiter { 
+          padding: 10px; 
+        }
+    #anakdua {
+      display: flex;
+        font-family: lato;
+        font-size: 20px;
+        justify-content: center;
+       margin: 120px 0 0 0;
+    }
+        
+        
+    img.kiri { 
+          height: 200px;
+        width: 200px;
+          border-radius:20%;
+          }
+      #lin { display: flex;
+      justify-content: center;
+      }
+    .portofolio { display: flex;
+    align-content: center;
+      font-weight: bold;
+      font-size: 20px;
+      font-family: Agbalumo;
+      margin: 500px 0 0 0;
+    }
+  
+    .port { color: #828282; 
+    display: flex;
+    font-size: 30px;
+    }
+    .folio {
+    color: #828282;
+    font-size: 30px;
+    }
+   
+    #wadah { 
+    margin: 140px 0px 0px 15px;
+      font-size: 20px;
+      font-family: Agbalumo;
+      display: grid;
+    }
+ #warnabg {
+  background-color: #DDE;
+  margin-top:-470px;
+ }   
+    .tengah { 
+      font-size: 40px; 
+    }
+    .akhir { 
+      display: flex;
+    }
+    .awal.akhir {
+      font-family: Heebo; 
+      margin-left: 20px;
+    }
+    
+    #kata {
+      display: flex;
+    font-size: 10px;
+      font-family: times new roman;
+    }
+    .judulisipuisi { 
+      /*position: relative;*/
+      margin: 40px 0 0 0px;
+      display: flex;
+      justify-content: center;
+      font-family: times new roman;
+      font-size: 14px;
+    }
+
+    .indukimage {
+    display:grid;
+     justify-content:center;
+     
+    }
+    .indukimage { 
+   margin: 30px 10px 0px 10px; 
+    display: grid;
+    justify-content: center;
+    }
+  .satuimg { 
+      border: 1px solid transparent;
+  padding: -20px 0 0 -10px;
+      border-radius: 4px;
+      max-width: fit-content;
+      box-shadow:inset 0px 0px 1px 1px #828282; 
+   /*   padding: 5px 10px 0px 10px;*/
+   height: 100%;
+      background-color: white; 
+    }
+  .hooh { 
+    border: 1px solid transparent;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+  background-color:#e7e9f9;
+  padding: 0 10px 0 10px;
+   }
+   .induk { 
+  border-radius: 10px;
+  border: 1px solid transparent;
+ position: inherit;
+top:3px;
+    }
+    #tentang { 
+      display: flex;
+    justify-content: center;
+    font-family: Indie Flower;
+    }
+  #boxBor{
+     padding: 5px 15px 0 15px;
+    max-width: fit-content;
+  }
+    #poetry {
+    font-size: 13px;
+    font-family:Indie Flower;
+   padding: 0px 15px 0px 15px;
+    }
+    #foot {
+      margin: 10px 0 0 0; 
+      color:#828282;
+      font-family: times new roman;
+      display: flex;
+      justify-content: center;
+    }
+    #warnafoot { 
+      background-color: black;
+    font-size: 13px;
+      margin: 80px 0 0 0;
+      padding: 20px 0 30px 0;
+    }
+  ul.motor { 
+    display: flex; 
+  justify-content: center;
+  }
+  ul.motor >li {
+    list-style: none; 
+    
+  }
+    .food { 
+      color:#828282;
+    justify-content: center;
+    margin: 0 0 0 20px;
+    font-size: 15px;
+    }
+    .gojek { 
+      color:#828282;
+    font-size: 15px;
+    margin: 0 0 0 20px;
+    }
+    .grab { 
+      color:#828282;
+    font-size: 15px;
+    font-family: times new roman;
+    margin: 0 0 0 20px;
+      
+    }
+    
+    .cau { 
+      position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+    .bungkusbordersatu {
+      margin: 20px 0 0 0; 
+    }
+    .bungkusborderdua {
+      margin: 20px 0 0 0; 
+    }
+    .bungkusbordertiga {
+      margin: 20px 0 0 0; 
+    }
+  
+@media  screen and (min-width:0px) and (max-width:388px)
+{
+  img.kiri {
+width: 150px;
+height: 150px;
+}
+#warnabg { 
+  margin-top: -480px; 
+  
+}
+.port,.folio { 
+  font-size: 20px;
+  margin-top: -5px;
+  }
+#anakdua { 
+  font-size: 15px;
+  color: blue;
+}
+#menuHamburger {
+  margin: 10px 0 0 0;
+}
+   #img-responsive {
+            border-radius: 100%;
+            border: 2px solid white;
+            filter: contrast(150%);
+           position: absolute;
+            margin-top: 6px;
+            width: 35px;
+            height: 35px;
+           display: flex;
+            animation-name: bulat;
+            animation-duration: 0.5s;
+            max-height: 35px;
+            max-width: 35px;
+        }
+
+        .indukCon {
+            color: white;
+            background-color: black;
+            display: flex;
+            position: fixed;
+            width: 100%;
+            height:50px;
+        }
+       #anakClassDua { 
+         margin-top: 49px; 
+       }
+        #judulWeb {
+           margin: 5px 5px 5px 8px;
+        }
+        img#warna { 
+          height: 35px;
+        width: 35px;
+        margin-top: -4px;
+        }
+        #wadah { 
+          margin: 80px 0px 0 6px;
+        }
+.judulisipuisi { 
+  font-size: 11px;
+}
+    .indukimage {
+    display:grid;
+     justify-content:center;
+     
+    }
+    .indukimage { 
+   margin: 30px 10px 0px 10px; 
+    display: grid;
+    justify-content: center;
+    }
+  .satuimg { 
+      border: 1px solid transparent;
+  padding: -20px 0 0 -10px;
+      border-radius: 4px;
+      max-width: fit-content;
+      box-shadow:inset 0px 0px 1px 1px #828282; 
+      padding: 5px 10px 0px 10px;
+      background-color: white; 
+    }
+  .hooh { 
+    border: 1px solid transparent;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+  background-color:#e7e9f9;
+  padding: 0 30px 0 30px;
+   }
+  .nya {
+    border: 1px solid transparent;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+  background-color:#e7e9f9;
+  padding: 0px 10px 0px 10px;
+   }
+   .induk { 
+  border-radius: 10px;
+  border: 1px solid transparent;
+ position: inherit;
+top:3px;
+    }
+    img.induk { 
+      height: 150px;
+    width: 150px 
+    }
+    #tentang { 
+      display: flex;
+    justify-content: center;
+    font-family: Indie Flower;
+    }
+  #boxBor{
+    padding: 10px 10px 0 10px;
+    max-width: fit-content;
+   /* height: 350px:*/
+  }
+    #poetry {
+    font-size: 13px;
+    font-family:Indie Flower;
+   padding: 0px 15px 0px 15px;
+   max-width: fit-content;
+    }
+#warnafoot { 
+      background-color: black;
+    font-size: 13px;
+      margin: 80px 0 0 0;
+      padding: 10px 0 20px 0;
+    }
+  ul.motor { 
+    display: flex; 
+  justify-content: center;
+  }
+  ul.motor >li {
+    list-style: none; 
+    
+  }
+    .food { 
+      color:#828282;
+    justify-content: center;
+    margin: 0 0 0 20px;
+    font-size: 15px;
+    }
+    .gojek { 
+      color:#828282;
+    font-size: 15px;
+    margin: 0 20px 0 0;
+    }
+    .grab { 
+      color:#828282;
+    font-size: 15px;
+    font-family: times new roman;
+    margin: 0 0 0 30;
+      
+    }
+    
+    .cau { 
+      position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+    .bungkusbordersatu {
+      margin: 20px 0 0 0; 
+    }
+    .bungkusborderdua {
+      margin: 20px 0 0 0; 
+    }
+    .bungkusbordertiga {
+      margin: 20px 0 0 0; 
+    }
+    #foot { 
+      font-size: 90%;
+    }
+    #warnabg { 
+    padding: 10px 0 0 0;
+}
+}
+@media screen and (min-width:386px) and (max-width:450px)
+{
+  img.kiri { 
+    height: 200px;
+    width: 200px;
+  }
+  #anakdua {
+    color: green;
+  }
+}
+    </style>
+</head>
+<body>
+  
+    <div class="indukCon">
+       <div id="judulWeb">
+            <img id="img-responsive" src="https://img.icons8.com/nolan/30/linux--v1.png" />
+        </div>
+        <div id="bulat"></div>
+        <div id="menuHamburger">
+            <img id="warna" src="https://img.icons8.com/ios/000000/menu--v7.png"
+            alt="menu--v7" />
+        </div>
+        </div>
+        <br>
+        <div class="cau">
+            <input type="checkbox" id="namaid"/>
+            
+            <div id="anakClassDua">
+                <ul>
+                    <li><a href="#">about</a></li>
+                    <li><a href="https://zerox-paranoid-team.blogspot.com/?fbclid=PAAaae02BjzYEpEMWyu7PTKES-iqhD4VWGBQh5COSipxXpGnElRo5jEDOkKwQ&m=1">blog</a></li>
+                    <li><a href="#">portofolio</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=6288210620351&text=hallo,apakah anda yang membuat web portofolio?">contact</a></li>
+                    <li><a href="https://instagram.com/liboys_13?igshid=OGQ5ZDc2ODk2ZA==">Myinsta</a></li>
+                    </ul> 
+                    <div id="icon">
+                        <div id="facebook">
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/F0F8FF/facebook--v1.png" alt="facebook--v1" /></div>
+                    <div id="instagram">
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/F0F8FF/instagram-new--v1.png" alt="instagram-new--v1" /></div>
+                    <div id="whatsapp">
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/F0F8FF/whatsapp--v1.png" alt="whatsapp--v1"/></div>
+                    <div id="twiter">
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/F0F8FF/twitter--v1.png" alt="twitter--v1"/></div>
+                </div>
+            </div>
+          </div>
+    <div id="warnabg">
+    <div class="portofolio">
+    <div class="port">
+      <h5>Port</h5>
+    </div>
+    <div class="folio">
+      Folio.
+    </div>
+    </div>
+    <div id="bungkusimg">
+        <div id="anakdua"><p>{ Coder }</p></div></div>
+      <div id="lin"><img class="kiri" src="http://telegra.ph/file/7139068f41ac9a4cdd4b7.jpg">
+      </div>
+        <div id="wadah">
+        <div class="awal"><p>Its,me</p></div>
+        <div class="tengah"><h3>Tuan Lintar</h3></div>
+        <div class="akhir"><p>I,am Front end</p> <h3 style="color: #DBE4EB;"> developer</h3></div>
+        
+        <div id="kata">
+          <p>hello, let me introduce myself, I am a self-taught programmer, I hope I can become a great programmer.</p>
+        </div>
+        </div>
+        <div class="judulisipuisi"><p>-----Beberapa puisi dan kata-kata dari film favoritku-----</p></div>
+        <div class="bungkusbordersatu">
+        <div id="indukone">
+        <div class="indukimage">
+          <div style="max-width: fit-content">
+          <div class="satuimg"> 
+             <div id="boxBor">
+           <div class="hooh">
+           <img class="induk" src="https://i.ibb.co/6rGzHdd/images-19.jpg">
+        </div>
+     <div id="tentang"><dd> puisi by patrick star
+     </dd></div>
+     <div id="poetry">
+       <dd>mawar itu biru violet itu merah, dan aku harus ke kamar mandi</dd>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     <!--content 2 dimulai-->
+     <div id="indukone">
+         <div class="indukimage"> 
+         <div style="max-width: fit-content" >
+           <div class="satuimg">
+         <div id="boxBor">
+           <div class="hooh">
+           <img class="induk" src="https://i.ibb.co/mChmjj4/images-20.jpg">
+        </div>
+     <div id="tentang"><dd> sponsboob said
+     </dd></div>
+     <div id="poetry">
+       <dd>jika kau tidak menemukan buku yang kau cari di rak, maka tulislah sendiri  </dd>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     <!--content 3 dimulai-->
+     <div id="indukone">
+       <div class="indukimage">
+         <div style="max-width: fit-content">
+          <div class="satuimg">
+              <div id="boxBor">
+           <div class="hooh">
+           <img class="induk" src="https://i.ibb.co/4T72YDp/images-22.jpg" >
+        </div>
+     <div id="tentang">
+      <dd> Squidword said
+     </dd>
+     </div>
+     <div id="poetry">
+       <dd>aku akan tetap bersantai meskipun itu akan membunuhku   </dd>
+     </div>
+     </div>
+     </div>
+</div>
+</div>
+</div>
+</div>
+<div id="warnafoot">
+<div class="bungkussatu">
+  <ul class="motor">
+<li><a href="www.google.com" class="gojek">About</a></li>
+<li><a href="#" class="grab">gmail</a></li>
+<li><a href="https://www.facebook.com/panzerox.panzerox" class="food">Facebook</a></li>
+  </ul>
+  </div>
+  <div id="foot">
+<p>&copy; 2023 situs Website portofolio saya. dilindungi hak cipta.</p></div>
+</div>
+</body>
+</html>
