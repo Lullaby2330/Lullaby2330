@@ -63,7 +63,6 @@
             right: 3px;
             margin: 8px;
             display: flex;
-          /*  z-index: 2;*/
         }
         
         #namaid {
@@ -242,7 +241,7 @@ top:3px;
   #boxBor{
      padding: 5px 15px 0 15px;
     max-width: fit-content;
-    width: 340px;
+    width: 350px;
   }
     #poetry {
     font-size: 13px;
@@ -305,16 +304,40 @@ top:3px;
       margin: 20px 0 0 0; 
     }
   
-/*@media  screen and (min-width:0px) and
-(max-width:390px)
+@media  only screen and (min-width: 400px)
 {
-  #boxBor {
-    width: 300px;
+ #boxBor {
+    width:350px;
   }
   #foot {
-    font-size: 20px;
+    font-size: 13px;
   }
-}*/
+  #anakdua {
+    color: red;
+  }
+  #foot {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width:400px)
+{
+  #anakdua {
+    color: green;
+  }
+  #boxBor {
+    width: 280px;
+  }
+  #foot {
+    font-size: 10px;
+  }
+  .judulisipuisi {
+    font-size: 10px;
+  }
+  .port,.folio {
+    font-size: 25px;
+  }
+}
+
     </style>
 </head>
 <body>
