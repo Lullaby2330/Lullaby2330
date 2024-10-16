@@ -1,474 +1,327 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portofolio pertama saya</title>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Freckle+Face&family=Lato:wght@700&family=Nosifer&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alumni+Sans+Collegiate+One&family=Bintik+Wajah&keluarga=Lato:wght@700&family=Nosifer&display=swap"rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Agbalumo&keluarga=Alumni+Sans+PerguruanTinggi+Satu&keluarga=Bintik+Wajah & keluarga=Heebo:wght@100;200&keluarga=IBM+Plex+Sans:wght@100&keluarga=Lato:wght@700&keluarga=Nosifer&display=swap"rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alumni+Sans+Collegiate+One&family=Barlow+Condensed:wght@500&family=Freckle+Face&family=Heebo:wght@100;200&family=IBM+Plex+Sans:wght@100&family=Lato:wght@700&family=Nosifer&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alumni+Sans+Collegiate+One&family=Barlow+Condensed:wght@100&family=Freckle+Face&family=Heebo:wght@100;200&family=IBM+Plex+Sans:wght@100&family=Indie+Flower&family=Lato:wght@700&family=Nosifer&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            top: 0;
-        }
-       
-        .indukCon {
-            color: White;
-            background-color: black;
-            display: flex;
-            position: fixed;
-            width: 100%;
-            height: 60px;
-        }
-       
-        #judulWeb {
-            margin: 15px 5px 5px 8px;
-        }
-        #img-responsive {
-            border-radius: 100%;
-            border: 2px solid white;
-            filter: contrast(150%);
-           position: absolute;
-            margin: 8px;
-            width: 45px;
-            height: 45px;
-            display: flex;
-            animation-name: bulat;
-            animation-duration: 0.5s;
-        }
-         @keyframes bulat {
-    from {
-      transform: rotate(5turn);
-    }
-    to {
-      transform: rotate(-4turn);
-    }
-  }
-  
-  .bulat {
-    animation: bulat 1000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-            
-        
-        #menuHamburger {
-            position: fixed;
-            right: 3px;
-            margin: 8px;
-            display: flex;
-        }
-        
-        #namaid {
-          position: fixed;
-            right: 2px;
-            margin: 20px 24px 10px ;
-            display: flex;
-            opacity: 0;
-        } 
-            #namaid:checked + 
-        #anakClassDua {
-transform: scale(1);
-position: relative;
-z-index: 1;
-width: 100%;
-}
-
-        #warna {
-            filter: invert(50%);
-            width: 45px;
-            height: 45px;
-        }
-
-        #anakClassDua { 
-            list-style: none;
-            transform: scale(0);
-            background-color: #252525;
-            margin-top: 60px;
-            padding: 5px;
-            transition: 2s;
-           position: fixed;
-           width: 100%;/* kurang pake width*/
-           z-index: 1;
-        }
-        #anakClassDua >ul>li {
-            justify-content: center;
-            display: grid;
-           padding: 20px 0 20px 0;
-            margin-block: 5px;
-            border-bottom:0.1px solid #A9A9A9;
-            list-style: none;
-            z-index: 2;
-        }
-        
-        a {
-            text-decoration: none;
-            color: white;
-            font-family: Times New Roman;
-            font-size: 20px;
-        }
-        #icon { 
-          justify-content: center;
-            align-content: center;
-            display: flex; 
-            margin-block: 5px;
-            margin: -05px;
-        }
-        #facebook { 
-          padding: 10px; 
-        }
-        #instagram {
-          padding: 10px;
-        }
-        #whatsapp { 
-          padding: 10px; 
-        }
-        #twiter { 
-          padding: 10px; 
-        }
-    #anakdua {
-      display: flex;
-        font-family: lato;
-        font-size: 20px;
-        justify-content: center;
-       margin: 120px 0 0 0;
-    }
-        
-        
-    img.kiri { 
-          height: 200px;
-        width: 200px;
-          border-radius:20%;
-          }
-      #lin { display: flex;
-      justify-content: center;
-      }
-    .portofolio { display: flex;
-    align-content: center;
-      font-weight: bold;
-      font-size: 20px;
-      font-family: Agbalumo;
-      margin: 500px 0 0 0;
-    }
-  
-    .port { color: #828282; 
-    display: flex;
-    font-size: 30px;
-    }
-    .folio {
-    color: #828282;
-    font-size: 30px;
-    }
-   
-    #wadah { 
-    margin: 140px 0px 0px 15px;
-      font-size: 20px;
-      font-family: Agbalumo;
-      display: grid;
-    }
- #warnabg {
-  background-color: #DDE;
-  margin-top:-470px;
- }   
-    .tengah { 
-      font-size: 40px; 
-    }
-    .akhir { 
-      display: flex;
-    }
-    .awal.akhir {
-      font-family: Heebo; 
-      margin-left: 20px;
-    }
-    
-    #kata {
-      display: flex;
-    font-size: 10px;
-      font-family: times new roman;
-    }
-    .judulisipuisi { 
-      margin: 40px 0 0 0px;
-      display: flex;
-      justify-content: center;
-      font-family: times new roman;
-      font-size: 14px;
-    }
-
-    .indukimage {
-    display:grid;
-     justify-content:center;
-     
-    }
-    .indukimage { 
-   margin: 30px 10px 0px 10px; 
-    display: grid;
-    justify-content: center;
-    }
-  .satuimg { 
-      border: 1px solid transparent;
-  padding: -20px 0 0 -10px;
-      border-radius: 4px;
-      max-width: fit-content;
-      box-shadow:inset 0px 0px 1px 1px #828282; 
-   height: 100%;
-      background-color: white; 
-    }
-  .hooh { 
-    border: 1px solid transparent;
-  justify-content: center;
-  display: flex;
-  border-radius: 5px;
-  background-color:#e7e9f9;
-  padding: 0 10px 0 10px;
-   }
-   .induk { 
-  border-radius: 10px;
-  border: 1px solid transparent;
- position: inherit;
-top:3px;
-    }
-    #tentang { 
-      display: flex;
-    justify-content: center;
-    font-family: Indie Flower;
-    }
-  #boxBor{
-     padding: 5px 15px 0 15px;
-    max-width: fit-content;
-    width: 350px;
-  }
-    #poetry {
-    font-size: 13px;
-    font-family:Indie Flower;
-   padding: 0px 15px 0px 15px;
-    }
-    #foot {
-      margin: 10px 0 0 0; 
-      color:#828282;
-      font-family: times new roman;
-      display: flex;
-      justify-content: center;
-    }
-    #warnafoot { 
-      background-color: black;
-    font-size: 13px;
-      margin: 80px 0 0 0;
-      padding: 20px 0 30px 0;
-    }
-  ul.motor { 
-    display: flex; 
-  justify-content: center;
-  }
-  ul.motor >li {
-    list-style: none; 
-    
-  }
-    .food { 
-      color:#828282;
-    justify-content: center;
-    margin: 0 0 0 20px;
-    font-size: 15px;
-    }
-    .gojek { 
-      color:#828282;
-    font-size: 15px;
-    margin: 0 0 0 20px;
-    }
-    .grab { 
-      color:#828282;
-    font-size: 15px;
-    font-family: times new roman;
-    margin: 0 0 0 20px;
-      
-    }
-    
-    .cau { 
-      position: fixed;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    }
-    .bungkusbordersatu {
-      margin: 20px 0 0 0; 
-    }
-    .bungkusborderdua {
-      margin: 20px 0 0 0; 
-    }
-    .bungkusbordertiga {
-      margin: 20px 0 0 0; 
-    }
-  
-@media  only screen and (min-width: 400px)
-{
- #boxBor {
-    width:350px;
-  }
-  #foot {
-    font-size: 13px;
-  }
-  #anakdua {
-    color: red;
-  }
-  #foot {
-    font-size: 13px;
-  }
-}
-@media only screen and (max-width:400px)
-{
-  #anakdua {
-    color: green;
-  }
-  #boxBor {
-    width: 280px;
-  }
-  #foot {
-    font-size: 10px;
-  }
-  .judulisipuisi {
-    font-size: 10px;
-  }
-  .port,.folio {
-    font-size: 25px;
-  }
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+ <script src="visitor.js"></script>
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="per.css"> 
 </head>
 <body>
-  
-    <div class="indukCon">
-       <div id="judulWeb">
-            <img id="img-responsive" src="https://img.icons8.com/nolan/30/linux--v1.png" />
-        </div>
-        <div id="bulat"></div>
-        <div id="menuHamburger">
-            <img id="warna" src="https://img.icons8.com/ios/000000/menu--v7.png"
-            alt="menu--v7" />
-        </div>
-        </div>
-        <br>
-        <div class="cau">
-            <input type="checkbox" id="namaid"/>
-            
-            <div id="anakClassDua">
-                <ul>
-                    <li><a href="#">about</a></li>
-                    <li><a href="https://zerox-paranoid-team.blogspot.com/?fbclid=PAAaae02BjzYEpEMWyu7PTKES-iqhD4VWGBQh5COSipxXpGnElRo5jEDOkKwQ&m=1">blog</a></li>
-                    <li><a href="#">portofolio</a></li>
-                    <li><a href="https://api.whatsapp.com/send?phone=6288210620351&text=hallo,apakah anda yang membuat web portofolio?">contact</a></li>
-                    <li><a href="https://instagram.com/liboys_13?igshid=OGQ5ZDc2ODk2ZA==">Myinsta</a></li>
-                    </ul> 
-                    <div id="icon">
-                        <div id="facebook">
-                    <img width="40" height="40" src="https://img.icons8.com/ios/50/F0F8FF/facebook--v1.png" alt="facebook--v1" /></div>
-                    <div id="instagram">
-                    <img width="40" height="40" src="https://img.icons8.com/ios/50/F0F8FF/instagram-new--v1.png" alt="instagram-new--v1" /></div>
-                    <div id="whatsapp">
-                   <a href="https://wa.me/+6288210620351"> <img width="40" height="40" src="https://img.icons8.com/ios/50/F0F8FF/whatsapp--v1.png" alt="whatsapp--v1"/></a></div>
-                    <div id="twiter">
-                    <img width="40" height="40" src="https://img.icons8.com/ios/50/F0F8FF/twitter--v1.png" alt="twitter--v1"/></div>
-                </div>
-            </div>
-          </div>
-    <div id="warnabg">
-    <div class="portofolio">
-    <div class="port">
-      <h5>Port</h5>
-    </div>
-    <div class="folio">
-      Folio.
-    </div>
-    </div>
-    <div id="bungkusimg">
-        <div id="anakdua"><p>{ Coder }</p></div></div>
-      <div id="lin"><img class="kiri" src="http://telegra.ph/file/7139068f41ac9a4cdd4b7.jpg">
-      </div>
-        <div id="wadah">
-        <div class="awal"><p>Its,me</p></div>
-        <div class="tengah"><h3>Tuan Lintar</h3></div>
-        <div class="akhir"><p>I,am Front end</p> <h3 style="color: #DBE4EB;"> developer</h3></div>
-        
-        <div id="kata">
-          <p>hello, let me introduce myself, I am a self-taught programmer, I hope I can become a great programmer.</p>
-        </div>
-        </div>
-        <div class="judulisipuisi"><p>-----Beberapa puisi dan kata-kata dari film favoritku-----</p></div>
-        <div class="bungkusbordersatu">
-        <div id="indukone">
-        <div class="indukimage">
-          <div style="max-width: fit-content">
-          <div class="satuimg"> 
-             <div id="boxBor">
-           <div class="hooh">
-           <img class="induk" src="https://i.ibb.co/6rGzHdd/images-19.jpg">
-        </div>
-     <div id="tentang"><dd> puisi by patrick star
-     </dd></div>
-     <div id="poetry">
-       <dd>mawar itu biru violet itu merah, dan aku harus ke kamar mandi</dd>
-     </div>
-     </div>
-     </div>
-     </div>
-     </div>
-     </div>
-     <!--content 2 dimulai-->
-     <div id="indukone">
-         <div class="indukimage"> 
-         <div style="max-width: fit-content" >
-           <div class="satuimg">
-         <div id="boxBor">
-           <div class="hooh">
-           <img class="induk" src="https://i.ibb.co/mChmjj4/images-20.jpg">
-        </div>
-     <div id="tentang"><dd> sponsboob said
-     </dd></div>
-     <div id="poetry">
-       <dd>jika kau tidak menemukan buku yang kau cari di rak, maka tulislah sendiri  </dd>
-     </div>
-     </div>
-     </div>
-     </div>
-     </div>
-     </div>
-     <!--content 3 dimulai-->
-     <div id="indukone">
-       <div class="indukimage">
-         <div style="max-width: fit-content">
-          <div class="satuimg">
-              <div id="boxBor">
-           <div class="hooh">
-           <img class="induk" src="https://i.ibb.co/4T72YDp/images-22.jpg" >
-        </div>
-     <div id="tentang">
-      <dd> Squidword said
-     </dd>
-     </div>
-     <div id="poetry">
-       <dd>aku akan tetap bersantai meskipun itu akan membunuhku   </dd>
-     </div>
-     </div>
-     </div>
-</div>
-</div>
-</div>
-</div>
-<div id="warnafoot">
-<div class="bungkussatu">
-  <ul class="motor">
-<li><a href="www.google.com" class="gojek">About</a></li>
-<li><a href="#" class="grab">gmail</a></li>
-<li><a href="https://www.facebook.com/panzerox.panzerox" class="food">Facebook</a></li>
-  </ul>
+<!--konten navbar dimulai-->
+<div class="container">
+  <div class="logo">
+<i class="fa-solid fa-bars fa-lg" style="color:#5097A4" class="ic"></i>
   </div>
-  <div id="foot">
-<p>&copy; 2023 situs Website portofolio saya. dilindungi hak cipta.</p></div>
+<div class="hub">Hubungi Kami</div>
+  <div class="logo-right">
+<i class="fa-solid fa-book-open" style="color:#5097A4"></i>
+<div class="per">Perpus</div>
+  </div>
+  
+  </div>
 </div>
+<input type="checkbox" id="check">
+<div class="con-log">
+  <ul>
+    <li><a href="www.google">Klien</a></li>
+    <li>FaQ</li>
+    <li>Kontak</li>
+  </ul>
+</div>
+<!--konten navbar berakhir-->
+
+<!--container two-->
+<!--konten 2 dimulai-->
+<div class="con-two">
+  <div class="batu">
+  <div class="text-3xl ">Library Digital</div>
+</div>
+<div class="desk">
+  <div class="nat">
+ <img src="https://i.ibb.co.com/6Yv8fqt/images-35.jpg" class="log">
+ </div>
+</div>
+</div>
+
+<div class="floating">
+  <div class="menu"> 
+<img width="16" height="16" src="https://img.icons8.com/officel/16/000000/double-down.png" alt="double-down"/>
+  </div>
+</div>
+<div class="vis">
+  <div class="text-cyan-700 font-bold flex justify-start border border-sky-500 rounded-full px-2 py-1">
+    <div>Jumlah Pengunjung:</div>
+  <div class="visitor-counter"></div>
+</div>
+  
+</div>
+<!--konten 2 berakhir-->
+<div class="con-tree">
+<p>ePerpus adalah sebuah perpustakaan</p>
+<p>Yang berbasis digital.</p>
+<p>sEhingga memudahkan untuk semua orang,</p>
+<p>yang mempunyai keinginan</p>
+<p>untuk belajar^-^</p>
+</div>
+
+<div class="ec">
+  <div class="text-cyan-700 font-bold">
+    <h3>Kelebihan ePerpus</h3>
+  </div>
+</div>
+
+<div class="bung">
+  <div class="slider">
+  <a href="#slide-1">1</a>
+  <a href="#slide-2">2</a>
+  <a href="#slide-3">3</a>
+  <a href="#slide-4">4</a>
+  <a href="#slide-5">5</a>
+  <div class="slides">
+    <div id="slide-1">
+<img src="https://i.ibb.co.com/GcRRfnh/1-customlogo-1.png" class="perpus">
+    </div>
+    <div id="slide-2">
+<img src="https://i.ibb.co.com/GcRRfnh/1-customlogo-1.png" class="perpus">
+    </div>
+    <div id="slide-3">
+<img src="https://i.ibb.co.com/Q6htZjH/7-aman.png" class="perpus">
+    </div>
+    <div id="slide-4">
+<img src="https://i.ibb.co.com/F4YXYqF/6-ribuanbuku.png" class="perpus">
+    </div>
+    <div id="slide-5">
+<img src="https://i.ibb.co.com/JnPR5Hk/2-kemudahanakses-1.png" class="perpus">
+    </div>
+</div>
+  </div>
+</div>
+
+<div class="ec">
+  <div class="text-cyan-700 font-bold">
+    <h3>Kelebihan Fitur</h3>
+  </div>
+</div>
+
+ <div class="con-img">
+   <div class="con-twoo">
+<img src="https://i.ibb.co.com/Srvwq6h/Homepage-Fitur1-1.png" class="gam">
+ </div>
+ 
+ <div class="con-pic">
+<div class="con-tree">
+<img src="https://i.ibb.co.com/ScvCMKz/Homepage-small1-1.png" class="dash">
+   </div>
+   <div class="isi">
+     Dashboard Analitik
+   </div>
+   <div class="isi-twoo">
+    Untuk reporting behaviour pembaca yang mudah & lengkap
+   </div>
+</div>
+
+<div class="con-pic">
+<div class="con-tree">
+  <img src="https://i.ibb.co.com/gvg9R7L/Homepage-small2-1.png" class="dash">
+   </div>
+   <div class="isi">
+     management konten
+   </div>
+</div>
+
+<div class="con-pic">
+<div class="con-tree">
+  <img src="https://i.ibb.co.com/k5bt5h1/Homepage-small3-1.png" class="dash">
+   </div>
+   <div class="isi">
+Tambahan Fitur Konten Internal
+   </div>
+</div>
+
+<div class="con-pic">
+<div class="con-tree">
+<img src="https://i.ibb.co.com/mtzVMqf/Homepage-small4-1.png" class="dash">
+   </div>
+   <div class="isi">
+Tambahan Fitur Sesuai Request
+   </div>
+</div>
+
+<div class="con-pic">
+<div class="con-tree">
+<img src="https://i.ibb.co.com/ZVxP3Tr/Homepage-small5.png" class="dash">
+   </div>
+   <div class="isi">
+Pinjam / Unduh Konten
+   </div>
+</div>
+
+<div class="ec">
+  <div class="text-cyan-700 font-bold">
+    <h3>Manfaat ePerpus</h3>
+  </div>
+</div>
+
+<div class="con-six">
+<img src="https://i.ibb.co.com/Z8K04sV/Homepage-Manfaat-aset-2.png class="dash">
+</div>
+
+<div class="con-seven"><!--1-->
+  <div class="con-tree">
+  <img src="https://i.ibb.co.com/6Fmm1cN/Homepage-1small.png" class="dash">
+     </div>
+     <div class="isi-four">
+     <div class=" fx-2 flex justify-center">
+  Meningkatkan kualitas secara individu
+     </div>
+     <div class=" fx-2 flex justify-center"> individu
+     </div>
+  </div>
+  
+  <div class="con-seven"><!--2-->
+  <div class="con-tree">
+  <img src="https://i.ibb.co.com/CHnvFxb/Homepage-2small.png" class="dash">
+     </div>
+     <div class="isi-four">
+     <div class=" fx-2 flex justify-center">
+  Sebagai sarana informasi dan hiburan bagi
+     </div>
+     <div class=" fx-2 flex justify-center"> anggota institusi
+     </div>
+  </div>
+  
+  <div class="con-seven"><!--3-->
+  <div class="con-tree">
+  <img src="https://i.ibb.co.com/CMdnDRZ/Homepage-3small.png" class="dash">
+     </div>
+     <div class="isi-four">
+     <div class=" fx-2 flex justify-center">
+  Menjadi panduan dan rujukan resmi bagi
+     </div>
+     <div class=" fx-2 flex justify-center"> institusi
+     </div>
+  </div>
+  
+  <div class="con-seven"><!--4-->
+  <div class="con-tree">
+  <img src="https://i.ibb.co.com/89wPhnt/Homepage-4small.png" class="dash">
+     </div>
+     <div class="isi-four">
+     <div class=" fx-2 flex justify-center">
+  Menjadi data insight bagi institusi
+     </div>
+  </div>
+  
+  <div class="con-seven"><!--5-->
+  <div class="con-tree">
+  <img src="https://i.ibb.co.com/X4j1zsQ/Homepage-7small.png" class="dash">
+     </div>
+     <div class="isi-four">
+     <div class=" fx-2 flex justify-center">
+  Menjadi medium pembelajaran jarak jauh
+     </div>
+  </div>
+   
+  <div class="con-seven"><!--6-->
+  <div class="con-tree">
+  <img src="https://i.ibb.co.com/h11ghWn/Homepage-5small.png" class="dash">
+     </div>
+     <div class="isi-four">
+     <div class=" fx-2 flex justify-center">
+  Meningkatkan akreditasi bagi sekolah dan
+     </div>
+     <div class=" fx-2 flex justify-center"> 
+     universitas
+     </div>
+  </div>
+  
+  <div class="con-seven"><!--7-->
+  <div class="con-tree">
+  <img src="https://i.ibb.co.com/fX6PYXk/Homepage-6small.png" class="dash">
+     </div>
+     <div class="isi-four">
+     <div class=" fx-2 flex justify-center">
+  Mendukung terciptanya smart city
+     </div>
+  </div>
+ 
+  <div class="vid-ifr">
+ <video src="https://youtu.be/MjOjo4jxADk?si=_0lqw8U-NxJyuxuz"  class="ifr" >
+</video>
+</div>
+
+<div class="con-eperpus">
+  <div class="isi-eperpus">
+ePerpus, adalah sebuah layanan
+  </div>
+<div class="isi-eperpus">
+ perpustakaan berbentuk digital
+  </div>
+  <div class="mt-10">
+  <div class="desk-eperpus">
+    Nikmati kemudahan peminjaman buku, 
+  </div>
+  <div class="desk-eperpus">
+     majalah, dan koran
+  </div>
+  <div class="desk-eperpus">
+  terlengkap dalam satu aplikasi.
+  </div>
+  <div class="desk-eperpus">
+    Coba Demo-nya sekarang!
+  </div>
+</div><!--class-tailwind-->
+<div class="flex justify-center">
+  <div class="info-eperpus">
+info lebih lanjut
+  </div>
+</div><!--class-tailwind-->
+</div>
+
+<div class="mt-10 flex justify-center text-2xl font-bold text-cyan-700">
+  Testimoni Klien ePerpus
+</div>
+
+<div class="flex justify-start">
+<div class="testimoni">
+“Bagi kami, sumber daya manusia adalah aset terpenting kami. Maka dari itu, kami tidak akan ragu-ragu untuk melakukan investasi dalam hal pengembangan sumber daya manusia kami."
+</div>
+</div><!--class-tailwind-->
+<div class="flex mx-4 ">
+<div class="klien-testimoni">
+  <img src="Viw.jpeg" class="isi-testimoni">
+  <div class="nama-klien">
+  <div class="mt-9 ml-4 text-2xl text-cyan-700 ">orisa mahardini</div><!--class-tailwind-->
+<div class="mb-9 ml-4 text-sm text-cyan-700">   Library Superintendent UMN</div><!--class-tailwind-->
+</div>
+</div>
+</div>
+
+<div class="konten-penerbit">
+  <div class="flex justify-center">Akses Konten Dari</div>
+  <div class="flex justify-center">Penerbit Terbaik</div>
+</div>
+ <!--<div class="fixed flex justify-between items-center w-full bg-cyan-700 bottom-0
+ px-4 py-2 shadow-inner z-10 nav-bottom">
+<div class="hov">
+  <div><span class="fa-solid fa-home border-lavender px-2 py-1 hover:bg-blue-200
+  rounded-lg shadow-xl home text-xl  white-bottom bg-black text-white"></span></div>
+</div>
+  <div><span class="fa-solid fa-bars-staggered border-lavender px-2 py-1 hover:bg-blue-200
+  rounded-lg shadow-xl bg-white project text-xl  white-bottom"></span></div>
+  
+   <a href="https://www.google.com/search?q=https%3A%2F%2Ffu17wc.pssi.org+php%3Fid%3D&oq=https%3A%2F%2Ffu17wc.pssi.org+php%3Fid%3D&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEINzEyOGowajSoAg6wAgE&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8"><div><span class="fa-solid fa-address-card border-lavender px-2 py-1 rounded-lg hover:bg-blue-200
+  shadow-xl about bg-white text-xl white-bottom"></span></div></a>
+  
+  <div><span class="fa-solid fa-message border-lavender px-2 py-1 rounded-lg bg-white
+  shadow-xl message hover:bg-blue-200  text-xl white-bottom"></span></div>
+ </div>-->
+
 </body>
-</html>
+  </html>
